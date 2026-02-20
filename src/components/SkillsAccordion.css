@@ -1,0 +1,16 @@
+.skills-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+}
+
+.skills-accordion-header .builder-section-title {
+  margin: 0;
+}
+
+.skills-suggest-btn {
+  font-size: 12px;
+}

@@ -1,0 +1,103 @@
+.ats-circle-block {
+  padding: var(--space-24);
+  margin-bottom: var(--space-24);
+  background: var(--color-bg);
+  border: 1px solid var(--color-muted);
+  border-radius: var(--space-8);
+  max-width: 280px;
+}
+
+.ats-circle-label {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  margin: 0 0 var(--space-16) 0;
+  text-align: center;
+}
+
+.ats-circle-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--space-12) auto;
+}
+
+.ats-circle-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ats-circle-bg {
+  stroke: var(--color-muted);
+  opacity: 0.3;
+}
+
+.ats-circle-fill {
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+.ats-circle-fill--needs-work {
+  stroke: #dc2626;
+}
+
+.ats-circle-fill--getting-there {
+  stroke: #d97706;
+}
+
+.ats-circle-fill--strong {
+  stroke: #059669;
+}
+
+.ats-circle-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.ats-circle-band {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 var(--space-16) 0;
+}
+
+.ats-circle-band--needs-work {
+  color: #dc2626;
+}
+
+.ats-circle-band--getting-there {
+  color: #d97706;
+}
+
+.ats-circle-band--strong {
+  color: #059669;
+}
+
+.ats-circle-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.ats-circle-suggestions li {
+  padding: var(--space-4) 0;
+  padding-left: var(--space-12);
+  position: relative;
+}
+
+.ats-circle-suggestions li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-dark);
+}

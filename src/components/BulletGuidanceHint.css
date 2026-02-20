@@ -1,0 +1,10 @@
+.bullet-guidance {
+  margin-top: var(--space-4);
+  font-size: 11px;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+.bullet-guidance-item {
+  display: inline;
+}

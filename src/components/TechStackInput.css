@@ -1,0 +1,50 @@
+.tech-stack-input {
+  margin-top: var(--space-4);
+}
+
+.tech-stack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.tech-stack-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: var(--color-muted);
+  color: var(--color-bg);
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.tech-stack-remove {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.tech-stack-remove:hover {
+  opacity: 1;
+}
+
+.tech-stack-field {
+  min-width: 140px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--space-8);
+  font-size: 12px;
+  background: var(--color-bg);
+}
+
+.tech-stack-field:focus {
+  outline: none;
+  border-color: var(--color-dark);
+}

@@ -1,0 +1,102 @@
+.projects-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+}
+
+.projects-accordion-header .builder-section-title {
+  margin: 0;
+}
+
+.project-accordion-item {
+  border: 1px solid var(--color-muted);
+  border-radius: var(--space-8);
+  margin-bottom: var(--space-8);
+  overflow: hidden;
+}
+
+.project-accordion-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-12) var(--space-16);
+  background: var(--color-bg);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark);
+  cursor: pointer;
+  text-align: left;
+}
+
+.project-accordion-head:hover {
+  background: #eee;
+}
+
+.project-accordion-title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-accordion-chevron {
+  flex-shrink: 0;
+  font-size: 10px;
+  color: var(--color-muted);
+}
+
+.project-accordion-body {
+  padding: var(--space-16);
+  border-top: 1px solid var(--color-muted);
+  background: #fff;
+}
+
+.project-accordion-body label {
+  display: block;
+  margin-bottom: var(--space-12);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.project-accordion-body label input,
+.project-accordion-body label textarea {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-4);
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--color-muted);
+  border-radius: var(--space-8);
+  font-size: 13px;
+}
+
+.project-accordion-body label textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.project-char-count {
+  display: block;
+  font-size: 11px;
+  color: var(--color-muted);
+  margin-top: 2px;
+}
+
+.project-accordion-actions {
+  margin-top: var(--space-16);
+  padding-top: var(--space-8);
+}
+
+.project-delete {
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.project-delete:hover {
+  color: var(--color-accent);
+}

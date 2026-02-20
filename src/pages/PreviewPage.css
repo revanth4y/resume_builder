@@ -1,0 +1,114 @@
+.preview-page {
+  padding: var(--space-40) var(--space-24);
+  background: #fff;
+  min-height: 100%;
+}
+
+.preview-page-layout {
+  display: flex;
+  gap: var(--space-40);
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.preview-page-sidebar {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.preview-page-sidebar .template-picker {
+  margin-bottom: var(--space-16);
+}
+
+.resume-print-area {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .preview-page-layout {
+    flex-direction: column;
+  }
+  .preview-page-sidebar {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media print {
+  .preview-page-layout {
+    display: block;
+  }
+  .preview-page-sidebar {
+    display: none !important;
+  }
+  .resume-print-area {
+    max-width: none;
+  }
+}
+
+/* Print: hide UI, show only resume with clean styling */
+@media print {
+  .app-nav,
+  .no-print {
+    display: none !important;
+  }
+
+  .preview-page {
+    padding: 0;
+    background: #fff;
+  }
+
+  .resume-print-area {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .resume-print-area .resume-preview,
+  .resume-print-area .resume-preview--minimal {
+    max-width: none;
+    margin: 0;
+    padding: 16mm 18mm;
+    background: #fff !important;
+    border: none;
+    box-shadow: none;
+  }
+
+  .resume-print-area .resume-preview-name,
+  .resume-print-area .resume-preview-section-title,
+  .resume-print-area .resume-preview-entry-head strong,
+  .resume-print-area .resume-preview-summary,
+  .resume-print-area .resume-preview-entry-details,
+  .resume-print-area .resume-preview-skills,
+  .resume-print-area .resume-preview-links {
+    color: #000 !important;
+  }
+
+  .resume-print-area .resume-preview-contact,
+  .resume-print-area .resume-preview-entry-head span,
+  .resume-print-area .resume-preview-entry-sub,
+  .resume-print-area .resume-preview-entry-link {
+    color: #333 !important;
+  }
+
+  .resume-print-area .resume-preview-section-title {
+    border-bottom-color: #000 !important;
+  }
+
+  /* Avoid splitting entries across pages */
+  .resume-print-area .resume-preview-entry {
+    page-break-inside: avoid;
+  }
+
+  .resume-print-area .resume-preview-section {
+    page-break-inside: avoid;
+  }
+
+  .resume-print-area .resume-preview-header {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,133 @@
+.builder-page {
+  padding: var(--space-24);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.builder-toolbar {
+  margin-bottom: var(--space-24);
+}
+
+.builder-columns {
+  display: flex;
+  gap: var(--space-40);
+  align-items: flex-start;
+}
+
+.builder-form {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.builder-section {
+  padding: var(--space-24);
+  background: var(--color-bg);
+  border: 1px solid var(--color-muted);
+  border-radius: var(--space-8);
+}
+
+.builder-section-title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--space-16) 0;
+  color: var(--color-dark);
+}
+
+.builder-section label,
+.builder-section input,
+.builder-section textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--space-8);
+}
+
+.builder-section label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+}
+
+.builder-section input,
+.builder-section textarea {
+  padding: var(--space-8) var(--space-16);
+  border: 1px solid var(--color-muted);
+  border-radius: var(--space-8);
+  background: var(--color-bg);
+  color: var(--color-dark);
+}
+
+.builder-section input:focus,
+.builder-section textarea:focus {
+  outline: none;
+  border-color: var(--color-dark);
+}
+
+.builder-section textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.builder-entry {
+  padding: var(--space-16);
+  margin-bottom: var(--space-16);
+  border: 1px dashed var(--color-muted);
+  border-radius: var(--space-8);
+}
+
+.builder-entry input,
+.builder-entry textarea {
+  margin-bottom: var(--space-8);
+}
+
+.builder-entry .btn-ghost {
+  margin-top: var(--space-8);
+  font-size: 12px;
+  color: var(--color-muted);
+  background: none;
+  border: none;
+  padding: var(--space-4) 0;
+}
+
+.builder-entry .btn-ghost:hover {
+  color: var(--color-accent);
+}
+
+.builder-section .btn-secondary {
+  margin-top: var(--space-8);
+}
+
+.builder-preview-wrap {
+  flex: 0 0 45%;
+  position: sticky;
+  top: var(--space-24);
+}
+
+.builder-preview-sticky {
+  position: sticky;
+  top: var(--space-24);
+}
+
+.builder-preview-label {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin: 0 0 var(--space-8) 0;
+}
+
+@media (max-width: 900px) {
+  .builder-columns {
+    flex-direction: column;
+  }
+  .builder-form,
+  .builder-preview-wrap {
+    flex: 1 1 100%;
+  }
+}

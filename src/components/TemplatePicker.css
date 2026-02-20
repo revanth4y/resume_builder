@@ -1,0 +1,140 @@
+.template-picker {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+  flex-wrap: wrap;
+}
+
+.template-picker-card {
+  width: 120px;
+  padding: var(--space-8);
+  background: var(--color-bg);
+  border: 2px solid var(--color-muted);
+  border-radius: var(--space-8);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.template-picker-card:hover {
+  border-color: var(--color-dark);
+}
+
+.template-picker-card.active {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.template-picker-thumb {
+  width: 120px;
+  height: 96px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.template-thumb {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.template-thumb-classic,
+.template-thumb-minimal {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.thumb-line {
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.thumb-line.thumb-name {
+  width: 70%;
+  height: 6px;
+  background: #333;
+}
+
+.thumb-line.thumb-sub {
+  width: 50%;
+  height: 3px;
+  background: #999;
+}
+
+.thumb-line.short {
+  width: 100%;
+}
+
+.thumb-rule {
+  height: 2px;
+  background: #333;
+  width: 100%;
+  margin: 2px 0;
+}
+
+.thumb-gap {
+  height: 8px;
+}
+
+.template-thumb-modern {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.thumb-sidebar {
+  width: 32%;
+  background: hsl(168, 60%, 40%);
+  border-radius: 4px 0 0 4px;
+}
+
+.thumb-main {
+  flex: 1;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.thumb-main .thumb-line {
+  width: 100%;
+}
+
+.thumb-main .thumb-rule {
+  margin: 2px 0;
+}
+
+.template-picker-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.template-picker-check {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 18px;
+  height: 18px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.template-picker-card {
+  position: relative;
+}

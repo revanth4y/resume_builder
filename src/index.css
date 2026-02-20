@@ -1,0 +1,54 @@
+/* Design system: at most 4 colors */
+:root {
+  --color-bg: #F7F6F3;       /* off-white background */
+  --color-dark: #1a1a1a;    /* text, top bar, footer */
+  --color-accent: #8B0000;   /* deep red - use sparingly */
+  --color-muted: #6B6B6B;   /* borders, secondary text */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-40: 40px;
+  --space-64: 64px;
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background: var(--color-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@media print {
+  .app-nav {
+    display: none !important;
+  }
+}
