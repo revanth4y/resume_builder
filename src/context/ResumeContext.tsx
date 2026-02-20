@@ -105,7 +105,7 @@ function makeId(prefix: string) {
 }
 
 function ensureIds<T extends { id?: string }>(items: T[], prefix: string): T[] {
-  return items.map((item, i) => ({
+  return items.map((item) => ({
     ...item,
     id: (item as { id?: string }).id || makeId(prefix),
   }));

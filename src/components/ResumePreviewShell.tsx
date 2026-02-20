@@ -1,4 +1,4 @@
-import type { ResumeData } from '../types/resume';
+import type { ResumeData, EducationEntry, ExperienceEntry, ProjectEntry } from '../types/resume';
 import type { ResumeTemplate } from '../context/TemplateContext';
 import './ResumePreviewShell.css';
 
@@ -12,7 +12,7 @@ type Props = {
   accentColor?: string;
 };
 
-function hasContent(entry: Record<string, unknown>): boolean {
+function hasContent(entry: EducationEntry | ExperienceEntry): boolean {
   return Object.entries(entry).some(([k, v]) => k !== 'id' && typeof v === 'string' && v.trim().length > 0);
 }
 
@@ -22,7 +22,7 @@ const SKILL_GROUP_LABELS: Record<string, string> = {
   tools: 'Tools & Technologies',
 };
 
-function projectHasContent(p: Record<string, unknown>): boolean {
+function projectHasContent(p: ProjectEntry): boolean {
   return Object.entries(p).some(([k, v]) => {
     if (k === 'id') return false;
     if (Array.isArray(v)) return v.length > 0;

@@ -10,9 +10,9 @@ import { SkillsAccordion } from '../components/SkillsAccordion';
 import './BuilderPage.css';
 
 export function BuilderPage() {
-  const { resume, setPersonal, setSummary, addEducation, removeEducation, updateEducation, addExperience, removeExperience, updateExperience, updateProject, removeProject, setLinks, loadSampleData } = useResume();
+  const { resume, setPersonal, setSummary, addEducation, removeEducation, updateEducation, addExperience, removeExperience, updateExperience, setLinks, loadSampleData } = useResume();
   const { template, accentColor } = useTemplate();
-  const { personal, summary, education, experience, projects, links } = resume;
+  const { personal, summary, education, experience, links } = resume;
 
   return (
     <div className="builder-page">
