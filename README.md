@@ -29,6 +29,8 @@ npm install
    npm run dev
 3. Production Build
    npm run build
+```
+
 📂 Repository Overview
 src/: Main application logic and resume components.
 
