@@ -32,6 +32,8 @@ npm install
 ```
 
 📂 Repository Overview
+
+
 src/: Main application logic and resume components.
 
 TEST_CHECKLIST.md: Manual testing steps for quality assurance.
